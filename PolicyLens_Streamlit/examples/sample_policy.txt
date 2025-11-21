@@ -1,0 +1,7 @@
+ExampleCorp Privacy & Data Use Policy
+
+1. We collect names, emails, device identifiers, and usage logs.
+2. Data is used to provide service, personalize content, and for analytics.
+3. We may share data with third-party processors for payments and analytics.
+4. Users may request access, correction, or deletion; contact privacy@example.com.
+5. Data retention: retained as needed for service, then deleted per retention schedule.
