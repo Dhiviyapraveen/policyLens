@@ -4,6 +4,8 @@ from utils.llm_client import explain_text
 from PyPDF2 import PdfReader
 from fpdf import FPDF
 import io
+from dotenv import load_dotenv
+load_dotenv()
 
 st.set_page_config(page_title='PolicyLens', layout='wide')
 st.markdown('<h1 style="color:#4B5563">PolicyLens</h1>', unsafe_allow_html=True)
@@ -15,7 +17,7 @@ length = st.sidebar.selectbox('Output Length', ['Short', 'Medium', 'Detailed'])
 highlight = st.sidebar.checkbox('Highlight key clauses', value=True)
 upload = st.sidebar.file_uploader('Upload PDF or TXT', type=['pdf','txt'])
 st.sidebar.markdown('---')
-st.sidebar.write('Tip: Set OPENAI_API_KEY or HUGGINGFACE_API_TOKEN to enable remote LLM calls.')
+st.sidebar.write('Tip: Set GEMINI_API_KEY to enable remote LLM calls.')
 
 # Main UI
 col1, col2 = st.columns([2,1])
